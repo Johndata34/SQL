@@ -1,0 +1,22 @@
+--Create a ice cream store datatabase
+
+CREATE TABLE ICECREAMSTORE (id INTEGER PRIMARY KEY, item TEXT, ITEMS INTEGER);
+
+INSERT INTO ICECREAMSTORE VALUES (1, "Oreo", 3);
+INSERT INTO ICECREAMSTORE VALUES (2, "Twixbar",5);
+INSERT INTO ICECREAMSTORE VALUES (3, "snickers",10);
+INSERT INTO ICECREAMSTORE VALUES (4, "chocolatecones",15);
+INSERT INTO ICECREAMSTORE VALUES (5, "butterpecan",20);
+INSERT INTO ICECREAMSTORE VALUES (6, "kitkatbar" ,22);
+INSERT INTO ICECREAMSTORE VALUES (7, "Rockyroad",30);
+
+--Display database order by items
+SELECT * FROM ICECREAMSTORE;
+
+--what are the most popular items? 
+SELECT item, popularity
+FROM store
+order by popularity
+ 
+
+
